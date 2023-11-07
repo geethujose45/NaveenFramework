@@ -1,0 +1,1 @@
+{"uuid":"7f474149-137f-4aa0-950f-a0db4384908e","name":"com.naveenautomation.Test.AccountPageTest","children":["9dd92216-5154-49f7-ab28-fa264e04ff5f"],"befores":[{"name":"loggerSteup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1699259604988,"stop":1699259605056}],"afters":[],"start":1699259604938,"stop":1699259615206}
