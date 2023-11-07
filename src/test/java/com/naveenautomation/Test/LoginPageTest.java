@@ -27,6 +27,10 @@ public class LoginPageTest extends BaseTest {
 		Assert.assertEquals(loginPage.getcredentialWarningMessage(),
 				"Warning: No match for E-Mail Address and/or Password.", "User loggin failed");
 	}
+	
+	public void  tryingToExampleTest() {
+		Assert.assertEquals("munni","munni");
+	}
 
 	@AfterMethod
 	public void quitBrowser() {
