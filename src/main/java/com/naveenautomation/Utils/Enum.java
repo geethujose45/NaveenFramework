@@ -5,7 +5,9 @@ public class Enum {
 	public enum Browsers {
 		CHROME, 
 		FIREFOX, 
-		EDGE;
+		EDGE,
+		SAFARI;
+		
 	}
 
 }
