@@ -1,5 +1,7 @@
 package com.naveenautomation.Test;
 
+import static org.junit.Assert.assertTrue;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -97,9 +99,13 @@ public class AccountPageTest extends BaseTest {
 		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "User navigation to my account page failed");
 
 	}
+
 @Test
 	public void testSampleraj() {
 		Assert.assertEquals("rajdeep","rajdeep");
+
+	
+	
 
 	}
 	@Test
