@@ -115,6 +115,11 @@ public class AccountPageTest extends BaseTest {
 		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "User Not registered");
 
 	}
+	@Test
+	public void validateTest() {
+		System.out.println("By AbhiSarang");
+		Assert.assertTrue(true);
+	}
 
 	@AfterMethod
 	public void quitBrowser() {
