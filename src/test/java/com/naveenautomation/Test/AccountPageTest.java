@@ -43,7 +43,10 @@ public class AccountPageTest extends BaseTest {
 		System.out.println("Test feature branch Surya");
 	}
 	
-	
+	public void validateDummyTest() {
+		System.out.println("Abhi");
+	}
+
 	@Test
 	public void validateUserCanValidateLoginWithValidCredential() {
 		// Log in with valid credentials and verify the 'My Account' text
@@ -105,13 +108,15 @@ public class AccountPageTest extends BaseTest {
 		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "User navigation to my account page failed");
 
 	}
-	
-	@Test
-	public void testSampleBinu() {
-		Assert.assertTrue(true);
-	
-	}
 
+@Test
+	public void testSampleraj() {
+		Assert.assertEquals("rajdeep","rajdeep");
+
+	
+	
+
+	}
 	@Test
 	public void validateUserCanRegister() {
 		registrationPage = loginPage.clickContinueRegisterBtn();
@@ -128,6 +133,11 @@ public class AccountPageTest extends BaseTest {
 		accountPage = registrationSucessMessagePage.clickContinueBtn();
 		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "User Not registered");
 
+	}
+	@Test
+	public void validateTest() {
+		System.out.println("By AbhiSarang");
+		Assert.assertTrue(true);
 	}
 
 	@AfterMethod
