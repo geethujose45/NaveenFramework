@@ -39,9 +39,14 @@ public class AccountPageTest extends BaseTest {
 	}
 
 	@Test
+	public void sampleTestSurya() {
+		System.out.println("Test feature branch Surya");
+	}
+	
 	public void validateDummyTest() {
 		System.out.println("Abhi");
 	}
+
 	@Test
 	public void validateUserCanValidateLoginWithValidCredential() {
 		// Log in with valid credentials and verify the 'My Account' text
