@@ -39,6 +39,10 @@ public class AccountPageTest extends BaseTest {
 	}
 
 	@Test
+	public void validateDummyTest() {
+		System.out.println("Abhi");
+	}
+	@Test
 	public void validateUserCanValidateLoginWithValidCredential() {
 		// Log in with valid credentials and verify the 'My Account' text
 		accountPage = loginPage.submitLogin("kelevocu@mailinator.com", "test");
