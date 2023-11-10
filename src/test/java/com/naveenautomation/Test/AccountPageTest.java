@@ -39,6 +39,12 @@ public class AccountPageTest extends BaseTest {
 	}
 
 	@Test
+	public void sampleTestSurya() {
+		System.out.println("Test feature branch Surya");
+	}
+	
+	
+	@Test
 	public void validateUserCanValidateLoginWithValidCredential() {
 		// Log in with valid credentials and verify the 'My Account' text
 		accountPage = loginPage.submitLogin("kelevocu@mailinator.com", "test");
