@@ -2,65 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="com.naveenautomation.Utils.ExtentReportListener"/>
+    <listener class-name="com.naveenautomation.Utils.CustomListerner"/>
+    <listener class-name="com.naveenautomation.Utils.TransformerForRetry"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.naveenautomation.Test.HomePageTest">
-        <methods>
-          <include name="loggerSteup"/>
-          <include name="quitBrowser"/>
-          <include name="validateIfUserLoggedOutSucsessfully"/>
-          <include name="launch"/>
-          <include name="validateIfUserCanContactStore"/>
-        </methods>
-      </class> <!-- com.naveenautomation.Test.HomePageTest -->
       <class name="com.naveenautomation.Test.AccountPageTest">
         <methods>
-          <include name="validateUserCanValidateLoginWithValidCredential"/>
-          <include name="validateIfUserCanUpdateAccountInfo"/>
           <include name="loggerSteup"/>
           <include name="quitBrowser"/>
           <include name="validateUserCanRegister"/>
+          <include name="validateIfUserCanRegisterAffiliateAccount"/>
           <include name="launch"/>
-          <include name="validateIfUserCanChangePassword"/>
           <include name="validateIfUserUpdateSubscribtion"/>
-          <include name="validateNoProductToReturnMessage"/>
         </methods>
       </class> <!-- com.naveenautomation.Test.AccountPageTest -->
-      <class name="com.naveenautomation.Test.ForgotPasswordPageTest">
-        <methods>
-          <include name="validateIfUserCanRetrivePassword"/>
-          <include name="loggerSteup"/>
-          <include name="quitBrowser"/>
-          <include name="launch"/>
-        </methods>
-      </class> <!-- com.naveenautomation.Test.ForgotPasswordPageTest -->
-      <class name="com.naveenautomation.Test.LoginPageTest">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="launch"/>
-          <include name="loggerSteup"/>
-          <include name="validateUserCannotValidateLoginWithInValidCredential"/>
-        </methods>
-      </class> <!-- com.naveenautomation.Test.LoginPageTest -->
-      <class name="com.naveenautomation.Test.ContactUsPageTest">
-        <methods>
-          <include name="validateUserCanSubmitContactUsFormWithoutValues"/>
-          <include name="loggerSteup"/>
-          <include name="quitBrowser"/>
-          <include name="launch"/>
-        </methods>
-      </class> <!-- com.naveenautomation.Test.ContactUsPageTest -->
-      <class name="com.naveenautomation.Test.AddressBookPageTest">
-        <methods>
-          <include name="loggerSteup"/>
-          <include name="quitBrowser"/>
-          <include name="validateUserCanAddNewAddressBook"/>
-          <include name="launch"/>
-          <include name="validateUserCanDeleteAddress"/>
-        </methods>
-      </class> <!-- com.naveenautomation.Test.AddressBookPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
