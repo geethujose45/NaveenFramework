@@ -11,8 +11,8 @@ import com.naveenautomation.Page.LoginPage;
 import com.naveenautomation.Utils.Enum.Browsers;
 
 public class ContactUsPageTest extends BaseTest {
-	LoginPage loginPage;
-	ContactUsPage contactUsPage;
+	private LoginPage loginPage;
+	private ContactUsPage contactUsPage;
 
 	@BeforeMethod
 	public void launch() {

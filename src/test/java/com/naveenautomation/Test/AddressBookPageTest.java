@@ -12,9 +12,9 @@ import com.naveenautomation.Page.LoginPage;
 import com.naveenautomation.Utils.Enum.Browsers;
 
 public class AddressBookPageTest extends BaseTest {
-	LoginPage loginPage;
-	AccountPage accountPage;
-	AddressBookPage addressBookPage;
+	private LoginPage loginPage;
+	private AccountPage accountPage;
+	private AddressBookPage addressBookPage;
 
 	@BeforeMethod
 	public void launch() {

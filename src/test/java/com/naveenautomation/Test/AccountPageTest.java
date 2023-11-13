@@ -1,7 +1,5 @@
 package com.naveenautomation.Test;
 
-import static org.junit.Assert.assertTrue;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -9,6 +7,8 @@ import org.testng.annotations.Test;
 
 import com.naveenautomation.Base.BaseTest;
 import com.naveenautomation.Page.AccountPage;
+import com.naveenautomation.Page.AffiliateAccountPage;
+import com.naveenautomation.Page.AffiliateTrackingPage;
 import com.naveenautomation.Page.ChangePasswordPage;
 import com.naveenautomation.Page.EditAccountInfoPage;
 import com.naveenautomation.Page.LoginPage;
@@ -17,10 +17,6 @@ import com.naveenautomation.Page.ProductReturnsPage;
 import com.naveenautomation.Page.RegistratonSucessMessagePage;
 import com.naveenautomation.Page.ReigistrationPage;
 import com.naveenautomation.Utils.Enum.Browsers;
-
-import io.qameta.allure.Description;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
 
 public class AccountPageTest extends BaseTest {
 	private AccountPage accountPage;
@@ -31,20 +27,13 @@ public class AccountPageTest extends BaseTest {
 	private ProductReturnsPage productReturnsPage;
 	private ReigistrationPage registrationPage;
 	private RegistratonSucessMessagePage registrationSucessMessagePage;
+	private AffiliateAccountPage affiliateAccountPage;
+	private AffiliateTrackingPage affiliateTrackingPage;
 
 	@BeforeMethod
 	public void launch() {
 		intilisation(Browsers.CHROME);
 		loginPage = new LoginPage();
-	}
-
-	@Test
-	public void sampleTestSurya() {
-		System.out.println("Test feature branch Surya");
-	}
-	
-	public void validateDummyTest() {
-		System.out.println("Abhi");
 	}
 
 	@Test
@@ -109,14 +98,41 @@ public class AccountPageTest extends BaseTest {
 
 	}
 
-@Test
-	public void testSampleraj() {
-		Assert.assertEquals("rajdeep","rajdeep");
-
-	
-	
-
+	@Test(priority = 1)
+	public void validateIfUserCanRegisterAffiliateAccount() {
+		accountPage = loginPage.submitLogin("wujex@mailinator.com", "test");
+		affiliateAccountPage = accountPage.clickRegisterForAffiliateAccountLink();
+		affiliateAccountPage.enterCompanyName("Phases");
+		affiliateAccountPage.enterWebsite("www.phases.com");
+		affiliateAccountPage.enterTax("67428902834");
+		affiliateAccountPage.selectCheque();
+		affiliateAccountPage.enterChequeDetails("9734238798274");
+		affiliateAccountPage.agreeCheckBox();
+		accountPage = affiliateAccountPage.clickContinueBtn();
+		Assert.assertEquals(accountPage.getAccountUpdatesMessage(),
+				"Success: Your account has been successfully updated.");
 	}
+
+	@Test(priority = 2)
+	public void validateIfUserCanEditAffiliateAccount() {
+		accountPage = loginPage.submitLogin("wujex@mailinator.com", "test");
+		affiliateAccountPage = accountPage.clickeditAffiliateInformationLink();
+		affiliateAccountPage.selectCheque();
+		affiliateAccountPage.enterChequeDetails("Tressa");
+		accountPage = affiliateAccountPage.clickContinueBtn();
+		Assert.assertEquals(accountPage.getAccountUpdatesMessage(),
+				"Success: Your account has been successfully updated.");
+	}
+
+	@Test(priority = 3)
+	public void validateIfUserCanCustomAffiliateTrackingCode() {
+		accountPage = loginPage.submitLogin("wujex@mailinator.com", "test");
+		affiliateTrackingPage = accountPage.clickCustomAffiliateTrackingCodeLink();
+		affiliateTrackingPage.enterInputLink("www.google.com");
+		affiliateTrackingPage.clickCotinue();
+		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "Custom Affiliate Tracking Code No Sucess");
+	}
+
 	@Test
 	public void validateUserCanRegister() {
 		registrationPage = loginPage.clickContinueRegisterBtn();
@@ -134,6 +150,7 @@ public class AccountPageTest extends BaseTest {
 		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "User Not registered");
 
 	}
+
 	@Test
 	public void validateTest() {
 		System.out.println("By AbhiSarang");

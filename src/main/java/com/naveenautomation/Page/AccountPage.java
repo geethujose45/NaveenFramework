@@ -9,9 +9,7 @@ import com.naveenautomation.Base.BaseTest;
 import io.qameta.allure.Step;
 
 public class AccountPage extends BaseTest {
-	EditAccountInfoPage editAccountInfoPage;
-	NewsLetterSubscribtionPage newsLetterSubscribtionPage;
-	AccountLogoutPage accountLogoutPage;
+	
 
 	public AccountPage() {
 		PageFactory.initElements(wd, this);
@@ -25,6 +23,18 @@ public class AccountPage extends BaseTest {
 
 	@FindBy(css = "div[class='alert alert-success alert-dismssible']")
 	WebElement subscribtionUpdateMessage;
+	
+	@FindBy(xpath="//a[text()='Register for an affiliate account']")
+	WebElement registerForAffiliateAccountLink;
+	
+	@FindBy(css="div[id='account-account']>div")
+	WebElement accountUpdatesMessage;
+	
+	@FindBy(xpath="//a[text()='Edit your affiliate information']")
+	WebElement editAffiliateInformationLink;
+	
+	@FindBy(xpath="//a[text()='Custom Affiliate Tracking Code']")
+	WebElement customAffiliateTrackingCodeLink;
 
 	// Method to get the text of 'My Account'
 	@Step("Get My Account Text")
@@ -36,6 +46,10 @@ public class AccountPage extends BaseTest {
 	@Step("Get Update Success Alert")
 	public String getInfoUpdateSucessMessage() {
 		return updateSuccessAlert.getText();
+	}
+	
+	public String getAccountUpdatesMessage() {
+		return accountUpdatesMessage.getText();
 	}
 
 	// Method to click 'Edit your account information' link and navigate to the edit
@@ -82,5 +96,19 @@ public class AccountPage extends BaseTest {
 		clickOnNavigationLink(navigationLinks.ADDRESS_BOOK);
 		return new AddressBookPage();
 	}
+	
+	public AffiliateAccountPage clickRegisterForAffiliateAccountLink() {
+		registerForAffiliateAccountLink.click();
+		return new AffiliateAccountPage();
+	}
 
+	public AffiliateAccountPage clickeditAffiliateInformationLink() {
+		editAffiliateInformationLink.click();
+		return new AffiliateAccountPage();
+	}
+	
+	public AffiliateTrackingPage clickCustomAffiliateTrackingCodeLink() {
+		customAffiliateTrackingCodeLink.click();
+		return new AffiliateTrackingPage();
+	}
 }

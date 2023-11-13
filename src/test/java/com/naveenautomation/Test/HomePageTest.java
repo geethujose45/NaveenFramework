@@ -1,6 +1,5 @@
 package com.naveenautomation.Test;
 
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,16 +14,13 @@ import com.naveenautomation.Page.LoginPage;
 import com.naveenautomation.Utils.Enum.Browsers;
 
 public class HomePageTest extends BaseTest {
-	AccountPage accountPage;
-	AccountLogoutPage accountLogoutPage;
-	LoginPage loginPage;
-	HomePage homePage;
-	ContactUsPage contactUsPage;
+	private AccountPage accountPage;
+	private AccountLogoutPage accountLogoutPage;
+	private LoginPage loginPage;
+	private HomePage homePage;
+	private ContactUsPage contactUsPage;
 
-	public HomePageTest() {
-		PageFactory.initElements(wd, this);
-	}
-
+	
 	@BeforeMethod
 	public void launch() {
 		intilisation(Browsers.CHROME);

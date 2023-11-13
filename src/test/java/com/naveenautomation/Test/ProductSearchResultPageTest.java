@@ -20,15 +20,21 @@ public class ProductSearchResultPageTest extends BaseTest {
 	public void launch() {
 		intilisation(Browsers.CHROME);
 		loginPage = new LoginPage();
+		homePage= new HomePage();
 	}
 
 	@Test
 	public void validateIfUserCanSearchProduct() {
-		
-		homePage.inputSearchItem("iphone");
-		productSearchResultPage = homePage.clickSearchBtn();
+		productSearchResultPage = homePage.inputItemAndclickSearchBtn("Iphone");
 		Assert.assertEquals("Products meeting the search criteria", productSearchResultPage.getProductSearchMessage());
+	}
 
+	@Test
+	public void validateIfUserCanAddProductToTheCart() {
+		productSearchResultPage = homePage.inputItemAndclickSearchBtn("Iphone");
+		Assert.assertEquals("Products meeting the search criteria", productSearchResultPage.getProductSearchMessage());
+		productSearchResultPage.clickAddToCartBtn();
+		Assert.assertEquals("1 item(s) - $123.20",productSearchResultPage.getCartTextAfterAddingItem());
 	}
 
 	@AfterMethod

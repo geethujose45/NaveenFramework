@@ -6,13 +6,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.naveenautomation.Base.BaseTest;
-import com.naveenautomation.Page.AccountPage;
 import com.naveenautomation.Page.ForgotPasswordPage;
 import com.naveenautomation.Page.LoginPage;
 import com.naveenautomation.Utils.Enum.Browsers;
 
 public class ForgotPasswordPageTest extends BaseTest {
-	private AccountPage accountPage;
+
 	private LoginPage loginPage;
 	private ForgotPasswordPage forgetPasswordPage;
 

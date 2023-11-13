@@ -42,7 +42,7 @@ public class BaseTest {
 	public static Logger logger;
 	public WebDriverEvents events;
 	public EventFiringWebDriver e_driver;
-	private static final boolean RUN_ON_GRID = true;
+	private static final boolean RUN_ON_GRID = false;
 	
 
 	@BeforeClass
