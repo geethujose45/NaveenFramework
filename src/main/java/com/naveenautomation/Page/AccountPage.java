@@ -87,9 +87,9 @@ public class AccountPage extends BaseTest {
 
 	// Method to click 'View your return requests' link and navigate to the return
 	// requests page
-	public ProductReturnsPage clickReturnRequestLink() {
+	public ReturnsPage clickReturnRequestLink() {
 		clickOnNavigationLink(navigationLinks.RETURNS);
-		return new ProductReturnsPage();
+		return new ReturnsPage();
 	}
 
 	public AddressBookPage clickAddressBookLink() {

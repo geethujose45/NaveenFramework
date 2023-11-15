@@ -25,12 +25,14 @@ public class HomePage extends BaseTest {
 	
 	@FindBy(xpath="//a[text()='Phones & PDAs']")
 	WebElement clickProductPhonesAndPdas;
+	
+	@FindBy(css="footer>div>div>div:nth-of-type(2)>ul>li:nth-of-type(2)>a")
+	WebElement returnsLink;
 
 	// Method to get the text of the 'Featured' items section
 	public String getfeaturedItemsText() {
 		return featuredItemsText.getText();
 	}
-	
 	
 	public ProductSearchResultPage inputItemAndclickSearchBtn(String itemSearch) {
 		searchItem.sendKeys(itemSearch);
@@ -43,4 +45,8 @@ public class HomePage extends BaseTest {
 		return new ProductSearchResultPage();
 	}
 
+	public ProductReturnsPage clickReturnsLink() {
+		returnsLink.click();
+		return new ProductReturnsPage(); 
+	}
 }

@@ -11,6 +11,8 @@ import com.naveenautomation.Page.AccountPage;
 import com.naveenautomation.Page.ContactUsPage;
 import com.naveenautomation.Page.HomePage;
 import com.naveenautomation.Page.LoginPage;
+import com.naveenautomation.Page.ProductReturnsPage;
+import com.naveenautomation.Page.ProductReturnsSuccessPage;
 import com.naveenautomation.Utils.Enum.Browsers;
 
 public class HomePageTest extends BaseTest {
@@ -19,12 +21,14 @@ public class HomePageTest extends BaseTest {
 	private LoginPage loginPage;
 	private HomePage homePage;
 	private ContactUsPage contactUsPage;
+	private ProductReturnsPage productReturnsPage;
+	private ProductReturnsSuccessPage productReturnsSuccessPage;
 
-	
 	@BeforeMethod
 	public void launch() {
 		intilisation(Browsers.CHROME);
 		loginPage = new LoginPage();
+		homePage = new HomePage();
 	}
 
 	@Test
@@ -56,6 +60,45 @@ public class HomePageTest extends BaseTest {
 		Assert.assertEquals(homePage.getfeaturedItemsText(), "Featured", "Logout not successful");
 
 	}
+	
+	@Test
+	public void validateIfUserCanReturnProduct() {
+		productReturnsPage = homePage.clickReturnsLink();
+		productReturnsPage.enterFirstName("Kiti");
+		productReturnsPage.enterLastName("Eric");
+		productReturnsPage.enterEmail("kiti@mailinator.com");
+		productReturnsPage.enterTelephone("5647865432");
+		productReturnsPage.enterOrderId("45234");
+		productReturnsPage.datePicker();
+		productReturnsPage.enterProduct("Apple Watch");
+		productReturnsPage.enterProductCode("8564");
+		productReturnsPage.entetrQuantity("1");
+		productReturnsPage.reasonforReturn();
+		productReturnsPage.productIsOpened();
+		productReturnsPage.faultyOrOtherDetails("Found Defect in the product not able to use");
+		productReturnsSuccessPage=productReturnsPage.submitBtn();
+		homePage=productReturnsSuccessPage.clickSubmitBtn();
+		Assert.assertEquals(homePage.getfeaturedItemsText(), "Featured", "Logout not successful");
+	}
+
+	@Test
+	public void validateIfUserCanReturnProductWithoutUnnecessaryFields() {
+		productReturnsPage = homePage.clickReturnsLink();
+		productReturnsPage.enterFirstName("Kiti");
+		productReturnsPage.enterLastName("Eric");
+		productReturnsPage.enterEmail("kiti@mailinator.com");
+		productReturnsPage.enterTelephone("5647865432");
+		productReturnsPage.enterOrderId("45234");
+		productReturnsPage.enterProduct("Apple Watch");
+		productReturnsPage.enterProductCode("8564");
+		productReturnsPage.reasonforReturn();
+		productReturnsPage.productIsOpened();
+		productReturnsSuccessPage=productReturnsPage.submitBtn();
+		homePage=productReturnsSuccessPage.clickSubmitBtn();
+		Assert.assertEquals(homePage.getfeaturedItemsText(), "Featured", "Logout not successful");
+	}
+
+	
 
 	@AfterMethod
 	public void quitBrowser() {

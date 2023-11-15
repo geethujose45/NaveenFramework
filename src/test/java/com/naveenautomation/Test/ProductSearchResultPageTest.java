@@ -20,7 +20,7 @@ public class ProductSearchResultPageTest extends BaseTest {
 	public void launch() {
 		intilisation(Browsers.CHROME);
 		loginPage = new LoginPage();
-		homePage= new HomePage();
+		homePage = new HomePage();
 	}
 
 	@Test
@@ -34,7 +34,15 @@ public class ProductSearchResultPageTest extends BaseTest {
 		productSearchResultPage = homePage.inputItemAndclickSearchBtn("Iphone");
 		Assert.assertEquals("Products meeting the search criteria", productSearchResultPage.getProductSearchMessage());
 		productSearchResultPage.clickAddToCartBtn();
-		Assert.assertEquals("1 item(s) - $123.20",productSearchResultPage.getCartTextAfterAddingItem());
+		Assert.assertEquals("1 item(s) - $123.20", productSearchResultPage.getCartTextAfterAddingItem());
+	}
+
+	@Test
+	public void validateIfUserCanAddProductToWishList() {
+		productSearchResultPage = homePage.clickProductPhonesAndPdas();
+		productSearchResultPage.clickAddToWishListBtn();
+		Assert.assertEquals(productSearchResultPage.getProductAddedToWishListMessage(), "Success: You have added HTC Touch HD to your wish list!","Product not added to wishlist");
+
 	}
 
 	@AfterMethod

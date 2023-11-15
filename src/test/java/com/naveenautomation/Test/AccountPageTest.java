@@ -13,7 +13,7 @@ import com.naveenautomation.Page.ChangePasswordPage;
 import com.naveenautomation.Page.EditAccountInfoPage;
 import com.naveenautomation.Page.LoginPage;
 import com.naveenautomation.Page.NewsLetterSubscribtionPage;
-import com.naveenautomation.Page.ProductReturnsPage;
+import com.naveenautomation.Page.ReturnsPage;
 import com.naveenautomation.Page.RegistratonSucessMessagePage;
 import com.naveenautomation.Page.ReigistrationPage;
 import com.naveenautomation.Utils.Enum.Browsers;
@@ -24,11 +24,12 @@ public class AccountPageTest extends BaseTest {
 	private EditAccountInfoPage editAccountInfoPage;
 	private ChangePasswordPage changePasswordPage;
 	private NewsLetterSubscribtionPage newsLetterSubscribtionPage;
-	private ProductReturnsPage productReturnsPage;
+	private ReturnsPage returnsPage;
 	private ReigistrationPage registrationPage;
 	private RegistratonSucessMessagePage registrationSucessMessagePage;
 	private AffiliateAccountPage affiliateAccountPage;
 	private AffiliateTrackingPage affiliateTrackingPage;
+	private ReigistrationPage reigistrationPage;
 
 	@BeforeMethod
 	public void launch() {
@@ -88,12 +89,12 @@ public class AccountPageTest extends BaseTest {
 	public void validateNoProductToReturnMessage() {
 		// Log in and navigate to the Product Returns page
 		accountPage = loginPage.submitLogin("woqequn@mailinator.com", "test");
-		productReturnsPage = accountPage.clickReturnRequestLink();
+		returnsPage = accountPage.clickReturnRequestLink();
 		// Verify the message indicating no previous returns
-		Assert.assertEquals(productReturnsPage.getproductReturnText(), "You have not made any previous returns!",
+		Assert.assertEquals(returnsPage.getproductReturnText(), "You have not made any previous returns!",
 				"Navigation to product returns page failed");
 		// Click 'Continue'
-		accountPage = productReturnsPage.clickContinueBtn();
+		accountPage = returnsPage.clickContinueBtn();
 		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "User navigation to my account page failed");
 
 	}
@@ -152,10 +153,22 @@ public class AccountPageTest extends BaseTest {
 	}
 
 	@Test
-	public void validateTest() {
-		System.out.println("By AbhiSarang");
-		Assert.assertTrue(true);
+	public void validateUserCannotNavigateBackToRegistrationPageAfterRegistration() {
+		reigistrationPage = loginPage.clickContinueRegisterBtn();
+		reigistrationPage.enterFirstName("zamon");
+		reigistrationPage.enterLastName("ywuz");
+		reigistrationPage.enteremail("darimoji@mailinator.com");
+		reigistrationPage.enterTelePhone("45645645");
+		reigistrationPage.enterPassword("test");
+		reigistrationPage.enterConfirmPassword("test");
+		reigistrationPage.clickAgreeCheckBox();
+		reigistrationPage.clickContinueBtn();
+		wd.navigate().back();
+		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "User Not registered");
+
 	}
+
+
 
 	@AfterMethod
 	public void quitBrowser() {

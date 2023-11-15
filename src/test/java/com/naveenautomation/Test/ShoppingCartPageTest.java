@@ -6,9 +6,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.naveenautomation.Base.BaseTest;
-import com.naveenautomation.Page.AccountLogoutPage;
-import com.naveenautomation.Page.AccountPage;
-import com.naveenautomation.Page.ContactUsPage;
 import com.naveenautomation.Page.HomePage;
 import com.naveenautomation.Page.LoginPage;
 import com.naveenautomation.Page.ProductPage;

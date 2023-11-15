@@ -26,6 +26,12 @@ public class ProductSearchResultPage extends BaseTest {
 	@FindBy(css = "div[class='caption']>h4>a")
 	WebElement productLink;
 
+	@FindBy(css = "div[class='button-group']>button:nth-of-type(2)")
+	WebElement addToWishListBtn;
+
+	@FindBy(css = "div[id='product-category']>div")
+	WebElement productAddedToWishListMessage;
+
 	public String getProductSearchMessage() {
 		return productSearchMessage.getText();
 	}
@@ -47,5 +53,12 @@ public class ProductSearchResultPage extends BaseTest {
 		return new ProductPage();
 	}
 
-	
+	public void clickAddToWishListBtn() {
+		addToWishListBtn.click();
+	}
+
+	public String getProductAddedToWishListMessage() {
+		return productAddedToWishListMessage.getText();
+	}
+
 }
