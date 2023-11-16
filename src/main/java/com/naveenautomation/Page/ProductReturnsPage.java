@@ -1,8 +1,5 @@
 package com.naveenautomation.Page;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -56,9 +53,30 @@ public class ProductReturnsPage extends BaseTest {
 
 	@FindBy(xpath = "//a[text()='Back']")
 	WebElement backBtn;
-	
-	@FindBy(xpath="//div[text()='First Name must be between 1 and 32 characters!']")
+
+	@FindBy(xpath = "//div[text()='First Name must be between 1 and 32 characters!']")
 	WebElement firstNameRequiredAlertMessage;
+
+	@FindBy(xpath = "//div[text()='Last Name must be between 1 and 32 characters!']")
+	WebElement lastNameRequiredAlertMessage;
+
+	@FindBy(xpath = "//div[text()='E-Mail Address does not appear to be valid!']")
+	WebElement emailRequiredAlertMessage;
+
+	@FindBy(xpath = "//div[text()='Telephone must be between 3 and 32 characters!']")
+	WebElement telephoneRequiredAlertMessage;
+
+	@FindBy(xpath = "//div[text()='Order ID required!']")
+	WebElement orderIdRequiredAlertMessage;
+
+	@FindBy(xpath = "//div[text()='Product Name must be greater than 3 and less than 255 characters!']")
+	WebElement productNameRequiredAlertMessage;
+
+	@FindBy(xpath = "//div[text()='Product Model must be greater than 3 and less than 64 characters!']")
+	WebElement productCodeRequiredAlertMessage;
+
+	@FindBy(xpath = "//div[text()='You must select a return product reason!']")
+	WebElement productReturnReasonRequiredAlertMessage;
 
 	public void enterFirstName(String firstName) {
 		enterFirstName.sendKeys(firstName);
@@ -115,15 +133,43 @@ public class ProductReturnsPage extends BaseTest {
 
 	}
 
-	public void datePicker() {
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-		LocalDate localDate = LocalDate.now();
-		enterOrderedDate.click();
-		enterOrderedDate.sendKeys(dtf.format(localDate));
-	}
-	
+//	public void datePicker(String desiredDate) {
+//		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+//		LocalDate dateToUse = LocalDate.parse(desiredDate, dtf);
+//		enterOrderedDate.click();
+//		enterOrderedDate.sendKeys(dtf.format(dateToUse));
+//	}
+
 	public String getFirstNameRequiredAlertMessage() {
 		return firstNameRequiredAlertMessage.getText();
+	}
+
+	public String getLastNameRequiredAlertMessage() {
+		return lastNameRequiredAlertMessage.getText();
+	}
+
+	public String getemailRequiredAlertMessage() {
+		return emailRequiredAlertMessage.getText();
+	}
+
+	public String getProductNameRequiredAlertMessage() {
+		return productNameRequiredAlertMessage.getText();
+	}
+
+	public String getProductCodeRequiredAlertMessage() {
+		return productCodeRequiredAlertMessage.getText();
+	}
+
+	public String getProductReturnReasonRequiredAlertMessage() {
+		return productReturnReasonRequiredAlertMessage.getText();
+	}
+
+	public String getTelephoneRequiredAlertMessage() {
+		return telephoneRequiredAlertMessage.getText();
+	}
+
+	public String getOrderIdRequiredAlertMessage() {
+		return orderIdRequiredAlertMessage.getText();
 	}
 
 }

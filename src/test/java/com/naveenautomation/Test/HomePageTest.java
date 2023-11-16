@@ -60,7 +60,7 @@ public class HomePageTest extends BaseTest {
 		Assert.assertEquals(homePage.getfeaturedItemsText(), "Featured", "Logout not successful");
 
 	}
-	
+
 	@Test
 	public void validateIfUserCanReturnProduct() {
 		productReturnsPage = homePage.clickReturnsLink();
@@ -69,15 +69,16 @@ public class HomePageTest extends BaseTest {
 		productReturnsPage.enterEmail("kiti@mailinator.com");
 		productReturnsPage.enterTelephone("5647865432");
 		productReturnsPage.enterOrderId("45234");
-		productReturnsPage.datePicker();
+		sleep();
+		// productReturnsPage.datePicker();
 		productReturnsPage.enterProduct("Apple Watch");
 		productReturnsPage.enterProductCode("8564");
 		productReturnsPage.entetrQuantity("1");
 		productReturnsPage.reasonforReturn();
 		productReturnsPage.productIsOpened();
 		productReturnsPage.faultyOrOtherDetails("Found Defect in the product not able to use");
-		productReturnsSuccessPage=productReturnsPage.submitBtn();
-		homePage=productReturnsSuccessPage.clickSubmitBtn();
+		productReturnsSuccessPage = productReturnsPage.submitBtn();
+		homePage = productReturnsSuccessPage.clickSubmitBtn();
 		Assert.assertEquals(homePage.getfeaturedItemsText(), "Featured", "Logout not successful");
 	}
 
@@ -93,12 +94,10 @@ public class HomePageTest extends BaseTest {
 		productReturnsPage.enterProductCode("8564");
 		productReturnsPage.reasonforReturn();
 		productReturnsPage.productIsOpened();
-		productReturnsSuccessPage=productReturnsPage.submitBtn();
-		homePage=productReturnsSuccessPage.clickSubmitBtn();
+		productReturnsSuccessPage = productReturnsPage.submitBtn();
+		homePage = productReturnsSuccessPage.clickSubmitBtn();
 		Assert.assertEquals(homePage.getfeaturedItemsText(), "Featured", "Logout not successful");
 	}
-
-	
 
 	@AfterMethod
 	public void quitBrowser() {

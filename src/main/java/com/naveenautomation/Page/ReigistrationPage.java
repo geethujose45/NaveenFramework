@@ -1,5 +1,7 @@
 package com.naveenautomation.Page;
 
+import java.util.Set;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -47,19 +49,31 @@ public class ReigistrationPage extends BaseTest {
 
 	@FindBy(xpath = "//div[text()='Last Name must be between 1 and 32 characters!']")
 	WebElement lastNamefieldRequiredAlert;
-	
-	@FindBy(xpath="//div[text()='E-Mail Address does not appear to be valid!']")
+
+	@FindBy(xpath = "//div[text()='E-Mail Address does not appear to be valid!']")
 	WebElement emailfieldRequiredAlert;
-	
-	@FindBy(xpath="//div[text()='Telephone must be between 3 and 32 characters!']")
+
+	@FindBy(xpath = "//div[text()='Telephone must be between 3 and 32 characters!']")
 	WebElement telephoneNumberRequiredFieldAlert;
-	
-	@FindBy(xpath="//div[text()='Password must be between 4 and 20 characters!']")
+
+	@FindBy(xpath = "//div[text()='Password must be between 4 and 20 characters!']")
 	WebElement passwordRequieldFieldAlert;
-	
-	@FindBy(css="div[id='account-register']>div")
+
+	@FindBy(css = "div[id='account-register']>div")
 	WebElement userAldreadyRegisteredAlert;
-	
+
+	@FindBy(xpath = "//h4[text()='Privacy Policy']")
+	WebElement privacyPolicyPopUpHeadingText;
+
+	@FindBy(css = "button[class='close']")
+	WebElement closeBtnOfPrivacyPolicyPopUp;
+
+	@FindBy(xpath = "//b[text()='Privacy Policy']")
+	WebElement privacyPolicyLink;
+
+	@FindBy(xpath = "//h1[text()='Register Account']")
+	WebElement registerAccountTitleText;
+
 	public void enterFirstName(String firstName) {
 		inputFirstName.sendKeys(firstName);
 	}
@@ -108,21 +122,48 @@ public class ReigistrationPage extends BaseTest {
 	public String getLastNamefieldRequiredAlert() {
 		return lastNamefieldRequiredAlert.getText();
 	}
-	
+
 	public String getemailfieldRequiredAlert() {
 		return emailfieldRequiredAlert.getText();
 	}
-	
+
 	public String gettelephoneNumberRequiredFieldAlert() {
 		return telephoneNumberRequiredFieldAlert.getText();
 	}
-	
+
 	public String getpasswordRequieldFieldAlert() {
 		return passwordRequieldFieldAlert.getText();
 	}
-	
+
 	public String getUserAldreadyRegisteredAlert() {
 		return userAldreadyRegisteredAlert.getText();
 	}
 
+	public String getPrivacyPolicyPopUpHeadingText() {
+		return privacyPolicyPopUpHeadingText.getText();
+	}
+
+	public void clickCloseBtnOfPrivacyPolicyPopUp() {
+		closeBtnOfPrivacyPolicyPopUp.click();
+	}
+
+	public void clickPrivacyPolicyLink() {
+
+		String mainWindowHandle = wd.getWindowHandle();
+		privacyPolicyLink.click();
+		Set<String> windowHandles = wd.getWindowHandles();
+
+		// Switch to the new window
+		for (String windowHandle : windowHandles) {
+			if (!windowHandle.equals(mainWindowHandle)) {
+				wd.switchTo().window(windowHandle);
+				break;
+			}
+		}
+		wd.switchTo().window(mainWindowHandle);
+	}
+
+	public String getRegisterAccountTitleText() {
+		return registerAccountTitleText.getText();
+	}
 }

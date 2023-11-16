@@ -127,6 +127,15 @@ public class RegistrationPageTest extends BaseTest {
 				reigistrationPage.getUserAldreadyRegisteredAlert());
 	}
 
+	@Test
+	public void validateIfPrivadyPolicyIsAvailableOnClicking() {
+		reigistrationPage = loginPage.clickContinueRegisterBtn();
+		reigistrationPage.clickPrivacyPolicyLink();
+		Assert.assertEquals("Privacy Policy", reigistrationPage.getPrivacyPolicyPopUpHeadingText());
+		Assert.assertEquals("Register Account", reigistrationPage.getRegisterAccountTitleText());
+
+	}
+
 	@AfterMethod
 	public void quitBrowser() {
 		tearDown();
