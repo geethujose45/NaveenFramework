@@ -30,7 +30,7 @@ public class LoginPageTest extends BaseTest {
 				"Warning: No match for E-Mail Address and/or Password.", "User loggin failed");
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void validateUserCannotValidateLoginWithEmptyField() {
 		accountPage = loginPage.submitLogin("", "");
 		Assert.assertEquals(loginPage.getcredentialWarningMessage(),

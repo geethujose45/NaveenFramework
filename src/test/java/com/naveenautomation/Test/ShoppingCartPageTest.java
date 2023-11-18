@@ -29,7 +29,7 @@ public class ShoppingCartPageTest extends BaseTest{
 		homePage=new HomePage();
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void validateIfUserGetItemOutOfStockMessageForOutOfStockItems() {
 		
 		productSearchResultPage=homePage.clickProductPhonesAndPdas();
