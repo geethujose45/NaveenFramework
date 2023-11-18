@@ -15,7 +15,6 @@ import com.naveenautomation.Utils.Enum.Browsers;
 
 public class ShoppingCartPageTest extends BaseTest{
 	
-	private LoginPage loginPage;
 	private HomePage homePage;
 	private ProductSearchResultPage productSearchResultPage;
 	private ProductPage productPage;
@@ -25,7 +24,6 @@ public class ShoppingCartPageTest extends BaseTest{
 	@BeforeMethod
 	public void launch() {
 		intilisation(Browsers.CHROME);
-		loginPage = new LoginPage();
 		homePage=new HomePage();
 	}
 	
