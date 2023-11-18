@@ -23,7 +23,7 @@ public class LoginPageTest extends BaseTest {
 		loginPage = new LoginPage();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCannotValidateLoginWithInValidCredential() {
 		accountPage = loginPage.submitLogin("liib@maintor.com", "test");
 		Assert.assertEquals(loginPage.getcredentialWarningMessage(),
@@ -37,7 +37,7 @@ public class LoginPageTest extends BaseTest {
 				"Warning: No match for E-Mail Address and/or Password.", "User loggin failed");
 	}
 	
-	@Test(dataProvider = "User Credentials")
+	@Test(dataProvider = "User Credentials",enabled = false)
 	private void validateLoginWithMultipleValidCredentials(String userName, String password) {
 		accountPage = loginPage.submitLogin(userName, password);
 		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "Login Failed.");

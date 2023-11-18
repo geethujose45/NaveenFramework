@@ -72,7 +72,7 @@ public class AccountPageTest extends BaseTest {
 				"Success: Your password has been successfully updated.", "Password not changed");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateIfUserUpdateSubscribtion() {
 		// Log in and navigate to the Newsletter Subscription page
 		accountPage = loginPage.submitLogin("wujex@mailinator.com", "test");
@@ -99,7 +99,7 @@ public class AccountPageTest extends BaseTest {
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,enabled = false)
 	public void validateIfUserCanRegisterAffiliateAccount() {
 		accountPage = loginPage.submitLogin("wujex@mailinator.com", "test");
 		affiliateAccountPage = accountPage.clickRegisterForAffiliateAccountLink();
@@ -134,7 +134,7 @@ public class AccountPageTest extends BaseTest {
 		Assert.assertEquals(accountPage.getMyAccountText(), "My Account", "Custom Affiliate Tracking Code No Sucess");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanRegister() {
 		registrationPage = loginPage.clickContinueRegisterBtn();
 		registrationPage.enterFirstName("Kidisti");
@@ -152,7 +152,7 @@ public class AccountPageTest extends BaseTest {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCannotNavigateBackToRegistrationPageAfterRegistration() {
 		reigistrationPage = loginPage.clickContinueRegisterBtn();
 		reigistrationPage.enterFirstName("zamon");

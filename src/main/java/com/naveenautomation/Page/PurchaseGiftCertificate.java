@@ -8,5 +8,4 @@ public class PurchaseGiftCertificate extends BaseTest {
 	public PurchaseGiftCertificate() {
 		PageFactory.initElements(wd, this);
 	}
-	
 }

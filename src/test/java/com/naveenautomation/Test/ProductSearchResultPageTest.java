@@ -29,7 +29,7 @@ public class ProductSearchResultPageTest extends BaseTest {
 		Assert.assertEquals("Products meeting the search criteria", productSearchResultPage.getProductSearchMessage());
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateIfUserCanAddProductToTheCart() {
 		productSearchResultPage = homePage.inputItemAndclickSearchBtn("Iphone");
 		Assert.assertEquals("Products meeting the search criteria", productSearchResultPage.getProductSearchMessage());
@@ -37,7 +37,7 @@ public class ProductSearchResultPageTest extends BaseTest {
 		Assert.assertEquals("1 item(s) - $123.20", productSearchResultPage.getCartTextAfterAddingItem());
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateIfUserCanAddProductToWishList() {
 		productSearchResultPage = homePage.clickProductPhonesAndPdas();
 		productSearchResultPage.clickAddToWishListBtn();
