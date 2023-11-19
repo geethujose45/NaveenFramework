@@ -54,7 +54,6 @@ public class BaseTest {
 			try {
 				wd = new RemoteWebDriver(new URL("http://10.144.104.1:3454"), getOptions());
 			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} else {
@@ -95,7 +94,6 @@ public class BaseTest {
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
