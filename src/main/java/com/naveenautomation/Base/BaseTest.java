@@ -7,7 +7,6 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
@@ -20,30 +19,26 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeClass;
 
 import com.naveenautomation.Utils.Enum.Browsers;
 import com.naveenautomation.Utils.WebDriverEvents;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class BaseTest {
 
 	// WebDriver instance
 	public static WebDriver wd;
-
 	private final Browsers browser = Browsers.CHROME;
-
 	private final String URL = "https://naveenautomationlabs.com/opencart/index.php?route=account/login";
-
 	public static Logger logger;
 	public WebDriverEvents events;
-	public EventFiringWebDriver e_driver;
 	private static final boolean RUN_ON_GRID = false;
-	
 
 	@BeforeClass
 	public void loggerSteup() {
@@ -54,6 +49,7 @@ public class BaseTest {
 	}
 
 	public void intilisation(Browsers browser) {
+
 		if (RUN_ON_GRID) {
 			try {
 				wd = new RemoteWebDriver(new URL("http://10.144.104.1:3454"), getOptions());
@@ -64,35 +60,28 @@ public class BaseTest {
 		} else {
 			switch (browser) {
 			case CHROME:
-				wd = WebDriverManager.chromedriver().create();
+				wd = new ChromeDriver();
 				break;
 			case EDGE:
-				wd = WebDriverManager.edgedriver().create();
+				wd = new EdgeDriver();
 				break;
 			case FIREFOX:
-				wd = WebDriverManager.firefoxdriver().create();
+				wd = new FirefoxDriver();
 				break;
 
 			default:
 				throw new IllegalArgumentException();
 			}
 
-			// Wrap the instance
-
-			e_driver = new EventFiringWebDriver(wd);
-
-			// Events which need to be captured
 			events = new WebDriverEvents();
-			e_driver.register(events);
+			wd = new EventFiringDecorator<WebDriver>(events).decorate(wd);
 
-			// Assigning back the value to Web driver
-			wd = e_driver;
 			// Load page
 			wd.get(URL);
 
 			wd.manage().window().maximize();
 
-			wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		}
 	}

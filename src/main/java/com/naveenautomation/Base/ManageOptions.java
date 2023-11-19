@@ -9,11 +9,10 @@ import com.naveenautomation.Utils.Enum.Browsers;
 
 public class ManageOptions {
 
-	private ChromeOptions getChromeOptions(boolean runHeadless) {
+	private ChromeOptions getChromeOptions() {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
-		// options.addArguments("--headless");
-		options.setHeadless(runHeadless);
+		options.addArguments("--headless");
 		return options;
 	}
 
@@ -31,7 +30,7 @@ public class ManageOptions {
 
 		switch (browser) {
 		case CHROME:
-			return this.getChromeOptions(true);
+			return this.getChromeOptions();
 		case FIREFOX:
 			return this.getFireFoxOptions();
 		case EDGE:
