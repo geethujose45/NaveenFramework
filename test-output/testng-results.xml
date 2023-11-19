@@ -1,214 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="3" total="26" passed="17" failed="3" skipped="0">
+<testng-results retried="1" ignored="1" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-13T17:15:30 EST" name="Suite" finished-at="2023-11-13T17:21:45 EST" duration-ms="375154">
+  <suite started-at="2023-11-19T16:42:32 EST" name="Suite" finished-at="2023-11-19T16:42:38 EST" duration-ms="6030">
     <groups>
     </groups>
-    <test started-at="2023-11-13T17:15:30 EST" name="Test" finished-at="2023-11-13T17:21:45 EST" duration-ms="375154">
-      <class name="com.naveenautomation.Test.HomePageTest">
-        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.Test.HomePageTest@5460cf3a]" started-at="2023-11-13T17:20:07 EST" name="loggerSteup" finished-at="2023-11-13T17:20:07 EST" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSteup -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.HomePageTest@5460cf3a]" started-at="2023-11-13T17:20:07 EST" name="launch" finished-at="2023-11-13T17:20:16 EST" duration-ms="8591" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserCanContactStore()[pri:0, instance:com.naveenautomation.Test.HomePageTest@5460cf3a]" started-at="2023-11-13T17:20:16 EST" name="validateIfUserCanContactStore" finished-at="2023-11-13T17:20:22 EST" duration-ms="5495" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserCanContactStore -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.HomePageTest@5460cf3a]" started-at="2023-11-13T17:20:22 EST" name="quitBrowser" finished-at="2023-11-13T17:20:22 EST" duration-ms="188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.HomePageTest@5460cf3a]" started-at="2023-11-13T17:20:22 EST" name="launch" finished-at="2023-11-13T17:20:26 EST" duration-ms="4471" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserLoggedOutSucsessfully()[pri:0, instance:com.naveenautomation.Test.HomePageTest@5460cf3a]" started-at="2023-11-13T17:20:26 EST" name="validateIfUserLoggedOutSucsessfully" finished-at="2023-11-13T17:20:30 EST" duration-ms="3761" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserLoggedOutSucsessfully -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.HomePageTest@5460cf3a]" started-at="2023-11-13T17:20:30 EST" name="quitBrowser" finished-at="2023-11-13T17:20:30 EST" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.naveenautomation.Test.HomePageTest -->
+    <test started-at="2023-11-19T16:42:32 EST" name="Test" finished-at="2023-11-19T16:42:38 EST" duration-ms="6030">
       <class name="com.naveenautomation.Test.AccountPageTest">
-        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:15:30 EST" name="loggerSteup" finished-at="2023-11-13T17:15:31 EST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2a62b5bc]" started-at="2023-11-19T16:42:33 EST" name="loggerSteup" finished-at="2023-11-19T16:42:33 EST" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggerSteup -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:15:31 EST" name="launch" finished-at="2023-11-13T17:15:39 EST" duration-ms="8767" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2a62b5bc]" started-at="2023-11-19T16:42:33 EST" name="launch" finished-at="2023-11-19T16:42:36 EST" duration-ms="3600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="validateIfUserCanChangePassword()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:15:40 EST" name="validateIfUserCanChangePassword" finished-at="2023-11-13T17:15:47 EST" duration-ms="6849" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserCanChangePassword -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:15:47 EST" name="quitBrowser" finished-at="2023-11-13T17:15:47 EST" duration-ms="768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:15:47 EST" name="launch" finished-at="2023-11-13T17:15:54 EST" duration-ms="6167" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserCanUpdateAccountInfo()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:15:54 EST" name="validateIfUserCanUpdateAccountInfo" finished-at="2023-11-13T17:16:00 EST" duration-ms="6789" status="PASS">
+        <test-method retried="true" signature="validateIfUserCanUpdateAccountInfo()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2a62b5bc]" started-at="2023-11-19T16:42:36 EST" name="validateIfUserCanUpdateAccountInfo" finished-at="2023-11-19T16:42:36 EST" duration-ms="89" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: headless chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4106f3021baa8041e4f17c4602dafb32, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60816}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.21:4444/sess..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4106f3021baa8041e4f17c4602dafb32]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: headless chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4106f3021baa8041e4f17c4602dafb32, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60816}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.21:4444/sess..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4106f3021baa8041e4f17c4602dafb32
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
+at com.naveenautomation.Page.LoginPage.enterEmail(LoginPage.java:47)
+at com.naveenautomation.Page.LoginPage.submitLogin(LoginPage.java:59)
+at com.naveenautomation.Test.AccountPageTest.validateIfUserCanUpdateAccountInfo(AccountPageTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateIfUserCanUpdateAccountInfo -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:16:00 EST" name="quitBrowser" finished-at="2023-11-13T17:16:02 EST" duration-ms="1164" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2a62b5bc]" started-at="2023-11-19T16:42:36 EST" name="quitBrowser" finished-at="2023-11-19T16:42:37 EST" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:16:02 EST" name="launch" finished-at="2023-11-13T17:16:08 EST" duration-ms="5954" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2a62b5bc]" started-at="2023-11-19T16:42:37 EST" name="launch" finished-at="2023-11-19T16:42:38 EST" duration-ms="1460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method retried="true" signature="validateIfUserUpdateSubscribtion()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:16:08 EST" name="validateIfUserUpdateSubscribtion" finished-at="2023-11-13T17:16:36 EST" duration-ms="28399" status="SKIP">
+        <test-method signature="validateIfUserCanUpdateAccountInfo()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2a62b5bc]" started-at="2023-11-19T16:42:38 EST" name="validateIfUserCanUpdateAccountInfo" finished-at="2023-11-19T16:42:38 EST" duration-ms="64" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div[class='alert alert-success alert-dismssible']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63977}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 05659c273a3b1b1e28a755043ffcaa06
-*** Element info: {Using=css selector, value=div[class='alert alert-success alert-dismssible']}]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: headless chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d2d3b0cc85af3d63ef47906d117e52dc, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60835}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.21:4444/sess..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2d3b0cc85af3d63ef47906d117e52dc]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class='alert alert-success alert-dismssible']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63977}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 05659c273a3b1b1e28a755043ffcaa06
-*** Element info: {Using=css selector, value=div[class='alert alert-success alert-dismssible']}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: headless chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d2d3b0cc85af3d63ef47906d117e52dc, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60835}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.21:4444/sess..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2d3b0cc85af3d63ef47906d117e52dc
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-at com.naveenautomation.Page.AccountPage.getSubscribtionUpdateMessage(AccountPage.java:78)
-at com.naveenautomation.Test.AccountPageTest.validateIfUserUpdateSubscribtion(AccountPageTest.java:82)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserUpdateSubscribtion -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:16:36 EST" name="quitBrowser" finished-at="2023-11-13T17:16:37 EST" duration-ms="786" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:16:37 EST" name="launch" finished-at="2023-11-13T17:16:43 EST" duration-ms="5954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserUpdateSubscribtion()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:16:43 EST" name="validateIfUserUpdateSubscribtion" finished-at="2023-11-13T17:17:08 EST" duration-ms="25451" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div[class='alert alert-success alert-dismssible']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f0a1106daa73ce60506de9c4951f6e93
-*** Element info: {Using=css selector, value=div[class='alert alert-success alert-dismssible']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class='alert alert-success alert-dismssible']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f0a1106daa73ce60506de9c4951f6e93
-*** Element info: {Using=css selector, value=div[class='alert alert-success alert-dismssible']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-at com.naveenautomation.Page.AccountPage.getSubscribtionUpdateMessage(AccountPage.java:78)
-at com.naveenautomation.Test.AccountPageTest.validateIfUserUpdateSubscribtion(AccountPageTest.java:82)
+at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
+at com.naveenautomation.Page.LoginPage.enterEmail(LoginPage.java:47)
+at com.naveenautomation.Page.LoginPage.submitLogin(LoginPage.java:59)
+at com.naveenautomation.Test.AccountPageTest.validateIfUserCanUpdateAccountInfo(AccountPageTest.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -242,568 +178,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateIfUserUpdateSubscribtion -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:09 EST" name="quitBrowser" finished-at="2023-11-13T17:17:10 EST" duration-ms="775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:10 EST" name="launch" finished-at="2023-11-13T17:17:16 EST" duration-ms="5538" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateNoProductToReturnMessage()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:16 EST" name="validateNoProductToReturnMessage" finished-at="2023-11-13T17:17:20 EST" duration-ms="4217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateNoProductToReturnMessage -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:20 EST" name="quitBrowser" finished-at="2023-11-13T17:17:20 EST" duration-ms="683" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:21 EST" name="launch" finished-at="2023-11-13T17:17:26 EST" duration-ms="5613" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateTest()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:26 EST" name="validateTest" finished-at="2023-11-13T17:17:26 EST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:26 EST" name="quitBrowser" finished-at="2023-11-13T17:17:27 EST" duration-ms="439" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:27 EST" name="launch" finished-at="2023-11-13T17:17:32 EST" duration-ms="5228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method retried="true" signature="validateUserCanRegister()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:32 EST" name="validateUserCanRegister" finished-at="2023-11-13T17:17:57 EST" duration-ms="24921" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Congratulations! Your new account has been successfully created!']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd6cbd30bac222b485c493edcde08b02
-*** Element info: {Using=xpath, value=//p[text()='Congratulations! Your new account has been successfully created!']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Congratulations! Your new account has been successfully created!']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd6cbd30bac222b485c493edcde08b02
-*** Element info: {Using=xpath, value=//p[text()='Congratulations! Your new account has been successfully created!']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-at com.naveenautomation.Page.RegistratonSucessMessagePage.getRegistrationSucessMessage(RegistratonSucessMessagePage.java:21)
-at com.naveenautomation.Test.AccountPageTest.validateUserCanRegister(AccountPageTest.java:148)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanRegister -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:57 EST" name="quitBrowser" finished-at="2023-11-13T17:17:57 EST" duration-ms="547" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:17:57 EST" name="launch" finished-at="2023-11-13T17:18:03 EST" duration-ms="5902" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateUserCanRegister()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:18:03 EST" name="validateUserCanRegister" finished-at="2023-11-13T17:18:29 EST" duration-ms="25166" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Congratulations! Your new account has been successfully created!']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ce70c82300d32a72eefe42d77ed1ff6b
-*** Element info: {Using=xpath, value=//p[text()='Congratulations! Your new account has been successfully created!']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Congratulations! Your new account has been successfully created!']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ce70c82300d32a72eefe42d77ed1ff6b
-*** Element info: {Using=xpath, value=//p[text()='Congratulations! Your new account has been successfully created!']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-at com.naveenautomation.Page.RegistratonSucessMessagePage.getRegistrationSucessMessage(RegistratonSucessMessagePage.java:21)
-at com.naveenautomation.Test.AccountPageTest.validateUserCanRegister(AccountPageTest.java:148)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanRegister -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:18:29 EST" name="quitBrowser" finished-at="2023-11-13T17:18:29 EST" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:18:30 EST" name="launch" finished-at="2023-11-13T17:18:35 EST" duration-ms="5339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateUserCanValidateLoginWithValidCredential()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:18:35 EST" name="validateUserCanValidateLoginWithValidCredential" finished-at="2023-11-13T17:18:37 EST" duration-ms="1848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanValidateLoginWithValidCredential -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:18:37 EST" name="quitBrowser" finished-at="2023-11-13T17:18:37 EST" duration-ms="250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:18:37 EST" name="launch" finished-at="2023-11-13T17:18:42 EST" duration-ms="5062" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method retried="true" signature="validateIfUserCanRegisterAffiliateAccount()[pri:1, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:18:42 EST" name="validateIfUserCanRegisterAffiliateAccount" finished-at="2023-11-13T17:19:04 EST" duration-ms="22160" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Register for an affiliate account']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64226}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7359c10dc2182818b212abde843638f3
-*** Element info: {Using=xpath, value=//a[text()='Register for an affiliate account']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Register for an affiliate account']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64226}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7359c10dc2182818b212abde843638f3
-*** Element info: {Using=xpath, value=//a[text()='Register for an affiliate account']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.naveenautomation.Page.AccountPage.clickRegisterForAffiliateAccountLink(AccountPage.java:101)
-at com.naveenautomation.Test.AccountPageTest.validateIfUserCanRegisterAffiliateAccount(AccountPageTest.java:104)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserCanRegisterAffiliateAccount -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:19:04 EST" name="quitBrowser" finished-at="2023-11-13T17:19:05 EST" duration-ms="1135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:19:05 EST" name="launch" finished-at="2023-11-13T17:19:11 EST" duration-ms="5568" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserCanRegisterAffiliateAccount()[pri:1, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:19:11 EST" name="validateIfUserCanRegisterAffiliateAccount" finished-at="2023-11-13T17:19:33 EST" duration-ms="22001" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Register for an affiliate account']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3605e5bb8adbbf470aef375b4afbd1d8
-*** Element info: {Using=xpath, value=//a[text()='Register for an affiliate account']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Register for an affiliate account']"}
-  (Session info: chrome=119.0.6045.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NCPJDF6', ip: '192.168.0.21', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\geeth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3605e5bb8adbbf470aef375b4afbd1d8
-*** Element info: {Using=xpath, value=//a[text()='Register for an affiliate account']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.naveenautomation.Page.AccountPage.clickRegisterForAffiliateAccountLink(AccountPage.java:101)
-at com.naveenautomation.Test.AccountPageTest.validateIfUserCanRegisterAffiliateAccount(AccountPageTest.java:104)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserCanRegisterAffiliateAccount -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:19:34 EST" name="quitBrowser" finished-at="2023-11-13T17:19:35 EST" duration-ms="759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:19:35 EST" name="launch" finished-at="2023-11-13T17:19:41 EST" duration-ms="5824" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserCanEditAffiliateAccount()[pri:2, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:19:41 EST" name="validateIfUserCanEditAffiliateAccount" finished-at="2023-11-13T17:19:51 EST" duration-ms="10258" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserCanEditAffiliateAccount -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:19:51 EST" name="quitBrowser" finished-at="2023-11-13T17:19:52 EST" duration-ms="670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:19:52 EST" name="launch" finished-at="2023-11-13T17:19:57 EST" duration-ms="5605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserCanCustomAffiliateTrackingCode()[pri:3, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:19:57 EST" name="validateIfUserCanCustomAffiliateTrackingCode" finished-at="2023-11-13T17:20:06 EST" duration-ms="9088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserCanCustomAffiliateTrackingCode -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2f16c6b3]" started-at="2023-11-13T17:20:06 EST" name="quitBrowser" finished-at="2023-11-13T17:20:07 EST" duration-ms="929" status="PASS">
+        </test-method> <!-- validateIfUserCanUpdateAccountInfo -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AccountPageTest@2a62b5bc]" started-at="2023-11-19T16:42:38 EST" name="quitBrowser" finished-at="2023-11-19T16:42:38 EST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.naveenautomation.Test.AccountPageTest -->
-      <class name="com.naveenautomation.Test.ProductSearchResultPageTest">
-        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.Test.ProductSearchResultPageTest@27d4a09]" started-at="2023-11-13T17:21:26 EST" name="loggerSteup" finished-at="2023-11-13T17:21:26 EST" duration-ms="78" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSteup -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.ProductSearchResultPageTest@27d4a09]" started-at="2023-11-13T17:21:26 EST" name="launch" finished-at="2023-11-13T17:21:32 EST" duration-ms="5501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserCanAddProductToTheCart()[pri:0, instance:com.naveenautomation.Test.ProductSearchResultPageTest@27d4a09]" started-at="2023-11-13T17:21:32 EST" name="validateIfUserCanAddProductToTheCart" finished-at="2023-11-13T17:21:33 EST" duration-ms="1770" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserCanAddProductToTheCart -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.ProductSearchResultPageTest@27d4a09]" started-at="2023-11-13T17:21:33 EST" name="quitBrowser" finished-at="2023-11-13T17:21:34 EST" duration-ms="189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.ProductSearchResultPageTest@27d4a09]" started-at="2023-11-13T17:21:34 EST" name="launch" finished-at="2023-11-13T17:21:37 EST" duration-ms="3527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserCanSearchProduct()[pri:0, instance:com.naveenautomation.Test.ProductSearchResultPageTest@27d4a09]" started-at="2023-11-13T17:21:37 EST" name="validateIfUserCanSearchProduct" finished-at="2023-11-13T17:21:38 EST" duration-ms="1077" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserCanSearchProduct -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.ProductSearchResultPageTest@27d4a09]" started-at="2023-11-13T17:21:38 EST" name="quitBrowser" finished-at="2023-11-13T17:21:39 EST" duration-ms="358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.naveenautomation.Test.ProductSearchResultPageTest -->
-      <class name="com.naveenautomation.Test.AddressBookPageTest">
-        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.Test.AddressBookPageTest@2e6a5539]" started-at="2023-11-13T17:20:35 EST" name="loggerSteup" finished-at="2023-11-13T17:20:35 EST" duration-ms="36" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSteup -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AddressBookPageTest@2e6a5539]" started-at="2023-11-13T17:20:35 EST" name="launch" finished-at="2023-11-13T17:20:38 EST" duration-ms="3349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateUserCanAddNewAddressBook()[pri:1, instance:com.naveenautomation.Test.AddressBookPageTest@2e6a5539]" started-at="2023-11-13T17:20:38 EST" name="validateUserCanAddNewAddressBook" finished-at="2023-11-13T17:20:47 EST" duration-ms="8992" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanAddNewAddressBook -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AddressBookPageTest@2e6a5539]" started-at="2023-11-13T17:20:47 EST" name="quitBrowser" finished-at="2023-11-13T17:20:47 EST" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.AddressBookPageTest@2e6a5539]" started-at="2023-11-13T17:20:47 EST" name="launch" finished-at="2023-11-13T17:20:51 EST" duration-ms="3528" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateUserCanDeleteAddress()[pri:2, instance:com.naveenautomation.Test.AddressBookPageTest@2e6a5539]" started-at="2023-11-13T17:20:51 EST" name="validateUserCanDeleteAddress" finished-at="2023-11-13T17:20:58 EST" duration-ms="6848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanDeleteAddress -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.AddressBookPageTest@2e6a5539]" started-at="2023-11-13T17:20:58 EST" name="quitBrowser" finished-at="2023-11-13T17:20:58 EST" duration-ms="69" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.naveenautomation.Test.AddressBookPageTest -->
-      <class name="com.naveenautomation.Test.RegistrationPageTest">
-        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.Test.RegistrationPageTest@7e4204e2]" started-at="2023-11-13T17:21:39 EST" name="loggerSteup" finished-at="2023-11-13T17:21:39 EST" duration-ms="23" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSteup -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.RegistrationPageTest@7e4204e2]" started-at="2023-11-13T17:21:39 EST" name="launch" finished-at="2023-11-13T17:21:42 EST" duration-ms="3631" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="ValidateUserCannotRegisterwithoutCheckingAgreeCheckbox()[pri:0, instance:com.naveenautomation.Test.RegistrationPageTest@7e4204e2]" started-at="2023-11-13T17:21:42 EST" name="ValidateUserCannotRegisterwithoutCheckingAgreeCheckbox" finished-at="2023-11-13T17:21:45 EST" duration-ms="2774" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateUserCannotRegisterwithoutCheckingAgreeCheckbox -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.RegistrationPageTest@7e4204e2]" started-at="2023-11-13T17:21:45 EST" name="quitBrowser" finished-at="2023-11-13T17:21:45 EST" duration-ms="250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.naveenautomation.Test.RegistrationPageTest -->
-      <class name="com.naveenautomation.Test.ForgotPasswordPageTest">
-        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.Test.ForgotPasswordPageTest@65a15628]" started-at="2023-11-13T17:20:30 EST" name="loggerSteup" finished-at="2023-11-13T17:20:30 EST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSteup -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.ForgotPasswordPageTest@65a15628]" started-at="2023-11-13T17:20:30 EST" name="launch" finished-at="2023-11-13T17:20:34 EST" duration-ms="3406" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateIfUserCanRetrivePassword()[pri:0, instance:com.naveenautomation.Test.ForgotPasswordPageTest@65a15628]" started-at="2023-11-13T17:20:34 EST" name="validateIfUserCanRetrivePassword" finished-at="2023-11-13T17:20:35 EST" duration-ms="1157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateIfUserCanRetrivePassword -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.ForgotPasswordPageTest@65a15628]" started-at="2023-11-13T17:20:35 EST" name="quitBrowser" finished-at="2023-11-13T17:20:35 EST" duration-ms="122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.naveenautomation.Test.ForgotPasswordPageTest -->
-      <class name="com.naveenautomation.Test.ContactUsPageTest">
-        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.Test.ContactUsPageTest@3fc9504b]" started-at="2023-11-13T17:20:58 EST" name="loggerSteup" finished-at="2023-11-13T17:20:58 EST" duration-ms="18" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSteup -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.ContactUsPageTest@3fc9504b]" started-at="2023-11-13T17:20:58 EST" name="launch" finished-at="2023-11-13T17:21:01 EST" duration-ms="3362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateUserCanSubmitContactUsFormWithoutValues()[pri:0, instance:com.naveenautomation.Test.ContactUsPageTest@3fc9504b]" started-at="2023-11-13T17:21:01 EST" name="validateUserCanSubmitContactUsFormWithoutValues" finished-at="2023-11-13T17:21:18 EST" duration-ms="16688" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanSubmitContactUsFormWithoutValues -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.ContactUsPageTest@3fc9504b]" started-at="2023-11-13T17:21:18 EST" name="quitBrowser" finished-at="2023-11-13T17:21:18 EST" duration-ms="254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.naveenautomation.Test.ContactUsPageTest -->
-      <class name="com.naveenautomation.Test.LoginPageTest">
-        <test-method is-config="true" signature="loggerSteup()[pri:0, instance:com.naveenautomation.Test.LoginPageTest@6d025197]" started-at="2023-11-13T17:21:18 EST" name="loggerSteup" finished-at="2023-11-13T17:21:18 EST" duration-ms="15" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSteup -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.naveenautomation.Test.LoginPageTest@6d025197]" started-at="2023-11-13T17:21:18 EST" name="launch" finished-at="2023-11-13T17:21:24 EST" duration-ms="5931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="validateUserCannotValidateLoginWithInValidCredential()[pri:0, instance:com.naveenautomation.Test.LoginPageTest@6d025197]" started-at="2023-11-13T17:21:24 EST" name="validateUserCannotValidateLoginWithInValidCredential" finished-at="2023-11-13T17:21:25 EST" duration-ms="1103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCannotValidateLoginWithInValidCredential -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenautomation.Test.LoginPageTest@6d025197]" started-at="2023-11-13T17:21:25 EST" name="quitBrowser" finished-at="2023-11-13T17:21:26 EST" duration-ms="728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.naveenautomation.Test.LoginPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -9,12 +9,10 @@
     <classes>
       <class name="com.naveenautomation.Test.AccountPageTest">
         <methods>
+          <include name="validateIfUserCanUpdateAccountInfo"/>
           <include name="loggerSteup"/>
           <include name="quitBrowser"/>
-          <include name="validateUserCanRegister"/>
-          <include name="validateIfUserCanRegisterAffiliateAccount"/>
           <include name="launch"/>
-          <include name="validateIfUserUpdateSubscribtion"/>
         </methods>
       </class> <!-- com.naveenautomation.Test.AccountPageTest -->
     </classes>

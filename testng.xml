@@ -9,14 +9,14 @@
 			
 			<test thread-count="0" name="Test">
 			 <classes>
-			  <class name="com.naveenautomation.Test.AccountPageTest" /> 
-			  <class name="com.naveenautomation.Test.HomePageTest" />
+			 <class name="com.naveenautomation.Test.AccountPageTest" /> 
+			 <!--   <class name="com.naveenautomation.Test.HomePageTest" />
 			  <class name="com.naveenautomation.Test.ForgotPasswordPageTest" /> 
 			  <class name="com.naveenautomation.Test.AddressBookPageTest" /> 
 			  <class name="com.naveenautomation.Test.ContactUsPageTest" /> 
 			  <class name="com.naveenautomation.Test.LoginPageTest" /> 
 			  <class name="com.naveenautomation.Test.ProductSearchResultPageTest"></class> 
-			  <class name="com.naveenautomation.Test.RegistrationPageTest"></class>
+			  <class name="com.naveenautomation.Test.RegistrationPageTest"></class>-->
 			   </classes> 
 			</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -38,6 +38,7 @@ public class BaseTest {
 	private final String URL = "https://naveenautomationlabs.com/opencart/index.php?route=account/login";
 	public static Logger logger;
 	public WebDriverEvents events;
+
 	private static final boolean RUN_ON_GRID = true;
 
 	@BeforeClass
@@ -52,8 +53,9 @@ public class BaseTest {
 
 		if (RUN_ON_GRID) {
 			try {
-				wd = new RemoteWebDriver(new URL("http://192.168.0.21:4444"), getOptions());
+				wd = new RemoteWebDriver(new URL(" http://192.168.0.21:4444"), getOptions());
 			} catch (MalformedURLException e) {
+
 				e.printStackTrace();
 			}
 		} else {

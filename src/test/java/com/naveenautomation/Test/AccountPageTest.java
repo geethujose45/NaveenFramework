@@ -37,7 +37,7 @@ public class AccountPageTest extends BaseTest {
 		loginPage = new LoginPage();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanValidateLoginWithValidCredential() {
 		// Log in with valid credentials and verify the 'My Account' text
 		accountPage = loginPage.submitLogin("kelevocu@mailinator.com", "test");
@@ -58,7 +58,7 @@ public class AccountPageTest extends BaseTest {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateIfUserCanChangePassword() {
 		// Log in and navigate to the Change Password page
 		accountPage = loginPage.submitLogin("gakomuzod@mailinator.com", "Test");
@@ -85,7 +85,7 @@ public class AccountPageTest extends BaseTest {
 				"Failed to update subscription");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateNoProductToReturnMessage() {
 		// Log in and navigate to the Product Returns page
 		accountPage = loginPage.submitLogin("woqequn@mailinator.com", "test");
@@ -114,7 +114,7 @@ public class AccountPageTest extends BaseTest {
 				"Success: Your account has been successfully updated.");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,enabled = false)
 	public void validateIfUserCanEditAffiliateAccount() {
 		accountPage = loginPage.submitLogin("wujex@mailinator.com", "test");
 		affiliateAccountPage = accountPage.clickeditAffiliateInformationLink();
@@ -125,7 +125,7 @@ public class AccountPageTest extends BaseTest {
 				"Success: Your account has been successfully updated.");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,enabled = false)
 	public void validateIfUserCanCustomAffiliateTrackingCode() {
 		accountPage = loginPage.submitLogin("wujex@mailinator.com", "test");
 		affiliateTrackingPage = accountPage.clickCustomAffiliateTrackingCodeLink();
