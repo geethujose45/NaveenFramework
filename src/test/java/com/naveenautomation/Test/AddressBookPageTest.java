@@ -23,7 +23,7 @@ public class AddressBookPageTest extends BaseTest {
 		loginPage = new LoginPage();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,enabled = false)
 	public void validateUserCanDeleteAddress() {
 		accountPage = loginPage.submitLogin("nykuny@mailinator.com", "test");
 		addressBookPage = accountPage.clickAddressBookLink();

@@ -39,7 +39,7 @@ public class BaseTest {
 	public static Logger logger;
 	public WebDriverEvents events;
 
-	private static final boolean RUN_ON_GRID = true;
+	private static final boolean RUN_ON_GRID = false;
 
 	@BeforeClass
 	public void loggerSteup() {
@@ -50,7 +50,7 @@ public class BaseTest {
 	}
 
 	public void intilisation(Browsers browser) {
-
+		String BrowserExcecution = System.getProperty("Browser");
 		if (RUN_ON_GRID) {
 			try {
 				wd = new RemoteWebDriver(new URL(" http://192.168.0.21:4444"), getOptions());
@@ -59,14 +59,14 @@ public class BaseTest {
 				e.printStackTrace();
 			}
 		} else {
-			switch (browser) {
-			case CHROME:
+			switch (BrowserExcecution.toUpperCase()) {
+			case "CHROME":
 				wd = new ChromeDriver();
 				break;
-			case EDGE:
+			case "EDGE":
 				wd = new EdgeDriver();
 				break;
-			case FIREFOX:
+			case "FIREFOX":
 				wd = new FirefoxDriver();
 				break;
 

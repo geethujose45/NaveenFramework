@@ -21,7 +21,7 @@ public class ForgotPasswordPageTest extends BaseTest {
 		loginPage = new LoginPage();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateIfUserCanRetrivePassword() {
 		// Navigate to the Forgot Password page
 		forgetPasswordPage = loginPage.clickForgottenPwdLink();

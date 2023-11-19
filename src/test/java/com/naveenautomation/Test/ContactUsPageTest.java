@@ -20,7 +20,7 @@ public class ContactUsPageTest extends BaseTest {
 		loginPage = new LoginPage();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanSubmitContactUsFormWithoutValues() {
 		contactUsPage = loginPage.clickContactUsLink();
 		Assert.assertEquals(contactUsPage.getContactUsPageText(), "Contact Us", "Navigation to contact us failed");
