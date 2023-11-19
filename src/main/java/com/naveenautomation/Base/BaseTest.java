@@ -59,14 +59,14 @@ public class BaseTest {
 				e.printStackTrace();
 			}
 		} else {
-			switch (BrowserExcecution.toUpperCase()) {
-			case "CHROME":
+			switch (browser) {
+			case CHROME:
 				wd = new ChromeDriver();
 				break;
-			case "EDGE":
+			case EDGE:
 				wd = new EdgeDriver();
 				break;
-			case "FIREFOX":
+			case FIREFOX:
 				wd = new FirefoxDriver();
 				break;
 
