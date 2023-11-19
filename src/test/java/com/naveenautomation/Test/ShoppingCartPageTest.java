@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.naveenautomation.Base.BaseTest;
 import com.naveenautomation.Page.HomePage;
-import com.naveenautomation.Page.LoginPage;
+
 import com.naveenautomation.Page.ProductPage;
 import com.naveenautomation.Page.ProductSearchResultPage;
 import com.naveenautomation.Page.ShoppingCart;
