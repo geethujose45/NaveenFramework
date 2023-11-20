@@ -50,10 +50,11 @@ public class BaseTest {
 	}
 
 	public void intilisation(Browsers browser) {
-		String BrowserExcecution = System.getProperty("Browser");
+		String BrowserParameter = System.getProperty("Browser");
 		if (RUN_ON_GRID) {
 			try {
-				wd = new RemoteWebDriver(new URL(" http://192.168.0.21:4444"), getOptions());
+				wd = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),getOptions());
+				//wd = new RemoteWebDriver(new URL("http://10.144.96.26:4444"), getOptions());
 			} catch (MalformedURLException e) {
 
 				e.printStackTrace();

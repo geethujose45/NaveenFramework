@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.naveenautomation.Test.RegistrationPageTest">
+      <class name="com.naveenautomation.Test.AccountPageTest">
         <methods>
-          <include name="ValidateUserCannotRegisterwithoutCheckingAgreeCheckbox"/>
+          <include name="validateIfUserCanUpdateAccountInfo"/>
           <include name="loggerSteup"/>
           <include name="quitBrowser"/>
           <include name="launch"/>
         </methods>
-      </class> <!-- com.naveenautomation.Test.RegistrationPageTest -->
+      </class> <!-- com.naveenautomation.Test.AccountPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
